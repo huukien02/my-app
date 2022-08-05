@@ -58,8 +58,8 @@ var checkLogin = (req, res, next) => {
 
   catch (err) {
     
-    res.send('<a href="/login">Login</a>')
-    // res.send('<h1>Bạn Cần Đăng Nhập</h1>')
+    // res.send('<a href="/login">Login</a>')
+    res.render('login')
   }
 
 }
