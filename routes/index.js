@@ -137,6 +137,7 @@ router.get('/detail/:id', checkLogin, checkUser, function (req, res, next) {
 
   var name = req.data.name;
 
+
   db.query(`SELECT *FROM comment2 WHERE idSP=${req.params.id}`, function (err, result1) {
 
     db.query(`SELECT *FROM products WHERE id=${req.params.id}`, function (err, result) {
@@ -144,6 +145,7 @@ router.get('/detail/:id', checkLogin, checkUser, function (req, res, next) {
       res.render('chiTiet', { data: result, data1: result1, name: name })
     })
   })
+
 
 
 });

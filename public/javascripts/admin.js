@@ -120,7 +120,13 @@ function chiTiet(id) {
             return res.json();
         })
         .then(function (data) {
-             var item = JSON.parse(data[id].dsOrder)
+
+        
+
+            const item = JSON.parse(data[id].dsOrder)
+    
+
+
              var content = `<tr>
             <th>NAME</th>
             <th>IMAGE</th>

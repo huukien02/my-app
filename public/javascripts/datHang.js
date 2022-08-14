@@ -27,7 +27,7 @@ function deleteForm() {
         </tr>`;
 
   for (let i = 0; i < list.length; i++) {
-    content += `   <tr>
+    content += ` <tr>
             <td>${list[i].name}</td>
             <td><img src="${list[i].img}" alt=""></td>
             <td>${list[i].price}</td>
@@ -39,6 +39,8 @@ function deleteForm() {
   }
   document.getElementById("table").innerHTML = content;
   document.getElementById("donHang").value = JSON.stringify(list);
+
+
 
   var total = 0;
   for (let i = 0; i < list.length; i++) {
